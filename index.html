@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Hi!! This is the official site of Indoroid aka Aditya Bhushan Nagar">
+    <meta name="keywords" content="Indoroid, HTML, CSS, JS, Website Building">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
+    <title>Indoroid</title>
+    <style>
+      html {
+        scroll-behavior: smooth;
+        color: rgb(0, 0, 0);
+      }
+      body {
+        font-family: "Baloo Bhai 2", cursive;
+        background: white;
+      }
+
+      /*Navigation Menu CSS*/
+      nav {
+        /*Animation*/
+        animation-name: Nav-menu;
+        animation-duration: 15s;
+        animation-iteration-count: infinite;
+
+        /* Misc Properties */
+        background: rgb(54, 54, 54);
+        display: flex;
+        align-items: center;
+        align-content: center;
+        align-self: center;
+        flex-flow: row wrap;
+        justify-content: center;
+        font-family: "Baloo Bhai 2", cursive;
+        border: rgb(255, 238, 0) 2px solid;
+        border-radius: 20px;
+      }
+      .Nav-item{
+        background: rgb(0, 0, 0);
+        padding: 5px;
+        margin: 15px;
+        border: 2px solid rgb(255, 0, 0);
+        border-radius: 25px;
+        flex-grow: 5;
+        text-align: center;
+        padding: auto;
+      }
+      nav p a {
+        color: rgb(0, 17, 255);
+        text-decoration: none;
+        cursor: default;
+      }
+      nav p:hover {
+        background: rgb(255, 0, 0);
+        margin: 15px;
+        display: inline;
+        border: 2px solid rgb(0, 0, 0);
+        border-radius: 25px;
+      }
+      nav p a:hover {
+        background: rgb(255, 0, 0);
+        color: rgb(47, 0, 255);
+        text-decoration: none;
+        cursor: default;
+      }
+
+      @keyframes Nav-menu {
+          0%{
+              background: grey;
+          }
+          25%{
+              background: blue;
+          }
+          50%{
+              background: red;
+          }
+          75%{
+              background: green;
+          }
+          100%{
+              background-color: grey;
+          }
+      }
+
+      #My-Profile-Github{
+          height: 50px;
+          width: 50px;
+      }
+
+      #img-nav{
+          background: transparent;
+          border: none;
+          justify-self: center;
+          margin: auto;
+          padding: 4px;
+      }
+      #img-nav a{
+        background: transparent;
+        border: none;
+        color: unset;
+    }
+    #img-nav a:hover{
+        cursor: pointer;
+    }
+
+      /* Welcome Message */
+        #Welcome{
+        top: 0%;
+        background-image: url('https://www.bing.com/th?id=OIP.Wgz0CH0H3SnqlBmUkRrsMQHaEo&w=156&h=100&c=8&rs=1&qlt=90&pid=3.1&rm=2');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+      #Welcome_Hello{
+        margin-top: 0%;
+        margin: auto;
+        text-align: center;
+        font-size: 5em;
+
+        /* Animation */
+        position: relative;
+        animation-name: Welcome;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+    }
+    
+      @keyframes Welcome {
+          0%{
+              color: white;
+          }
+          25%{
+            color: blue;
+          }
+          50%{
+              color: red;
+          }
+          75%{
+              color: green;
+          }
+          100%{
+              color: white;
+          }
+      }
+
+      code{
+          font-size: 25px;
+          display: block;
+          margin: 4px;
+          font-family: 'Zen Dots', cursive;
+      }
+
+      a[target="_blank"]{
+          text-align: center;
+          font-size: 25px;
+          text-decoration: none;
+          color: yellow;
+          background: #000;
+
+          transition-property: all;
+          transition-delay: 2ms;
+          transition-duration: 2s;
+      }
+
+      a[target="_blank"]:hover{
+          font-size: 50px;
+          color: red;
+          border: 2px solid green;
+          background-color: white;
+      }
+
+      #Para1{
+          
+          color: blue;
+          text-align: center;
+          font-size: 40px;
+          padding: 10%;
+
+          animation-name: Welcome_Para;
+          animation-duration: 10s;
+          animation-iteration-count: infinite;
+      }
+
+      @keyframes Welcome_Para {
+          0%{
+              color: aqua;
+          }
+          25%{
+              color: blue;
+          }
+          50%{
+              color: purple;
+          }
+          75%{
+              color: blue;
+          }
+          100%{
+              color: aqua;
+          }
+      }
+
+      #Contact-heading{
+          margin: auto;
+          text-align: center;
+      }
+
+      #Contact-link{
+          display: flex;
+          flex-flow: column wrap;
+      }
+
+      #Contact-me{
+          margin: auto;
+          text-align: center;
+          border: 2px solid black;
+          margin: auto;
+
+          /*Animation*/
+          animation-name: Contact-me-bg;
+          animation-duration: 5s;
+          animation-iteration-count: infinite;
+      }
+
+      @keyframes Contact-me-bg {
+          0%{
+              background-color: white;
+          }
+          25%{
+              background-color: blue;
+          }
+          50%{
+              background-color: red;
+          }
+          75%{
+              background-color: green;
+          }
+          100%{
+              background-color: white;
+          }
+      }
+
+      #About-me-para{
+        font-family: 'Zen Dots', cursive;
+        font-size: 20px;
+      }
+
+      .My-services{
+          display: flex;
+          flex-flow: column wrap;
+          align-items: center;
+      }
+
+      .Services{
+          text-align: center;
+          border: 2px solid red;
+          background-color: darkmagenta;
+          height: auto;
+          width: auto;
+      }
+
+      #CSS-logo{
+          height: 100px;
+          width: 100px;
+      }
+
+      #HTML-logo{
+          height: 100px;
+          width: 100px;
+      }
+
+      #JS-logo{
+          height: 100px;
+          width: 100px;
+      }
+
+      .Services:hover{
+        border: 4px solid green;
+        background-color: gold;
+      }
+
+    </style>
+  </head>
+  <body>
+      
+      <div id="Welcome">
+        <!-- Navigation Menu -->
+          <nav>
+            <p id="img-nav">
+                <a href="https://github.com/Indoroid">
+                    <img src="https://cdn.freebiesupply.com/logos/large/2x/github-icon-logo-png-transparent.png" alt="" id="My-Profile-Github">
+                </a>
+            </p>
+            <p class="Nav-item"><a href="https://github.com/Indoroid?tab=projects">My Projects</a></p>
+            <p class="Nav-item"><a href="#">Downloads</a></p>
+            <p class="Nav-item"><a href="https://github.com/Indoroid?tab=repositories" >My repositories</a></p>
+          </nav>
+        <h1 id="Welcome_Hello">Hello!!</h1>
+        <p id="Para1">
+            Welcome to my Site!!
+            Thanks for checking me out.  
+        </p>
+    </div>
+
+    <!-- About me -->
+    <div id="#About-me">
+      <p id="About-me-para">I am an 14-year old boy who website designs and codes website designs for fun. I live in Ghaziabad, Uttar Pradesh, India. Studying in JKG International School, Indirapuram. Knows little CSS, HTML and JS. I am good with front-end website development stuff. Knows A LITTLE linux also. 
+      </p>
+    </div>
+
+    <div class="My-services">
+        <h1>What I can help you with!!</h1>
+        <div class="Services" id="HTML-serv">
+            <img src="https://www.freepnglogos.com/uploads/html5-logo-png/html5-logo-html-icons-download-14.png" alt="" id="HTML-logo">
+            <h1>HTML</h1>
+            <p>I know all the basics and can make the pages of HTML with much ease. I can make the site for you with very much ease. Knows how to optimise the SEO for the site alittle bit.</p>
+        </div>
+        <div class="Services" id="CSS-serv">
+            <img src="https://www.freepnglogos.com/uploads/html5-logo-png/html5-logo-css-logo-png-transparent-svg-vector-bie-supply-9.png" alt="" id="CSS-logo">
+            <h1>CSS</h1>
+            <p>I know all the basic rules of CSS and I also design sites in a very great manner. Designs are available in my github repos which you can use and inspect yourself to see how I build my sites!!</p>
+        </div>
+        <div class="Services" id="JS-serv">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/d/dc/Javascript-shield.png" alt="" id="JS-logo">
+            <h1>JS</h1>
+            <p>I know how to write basic javascript which helps in making your web page to become alive. Javascript is the brain of the page if, HTML is the skeleton and CSS is the skin and beauty of the page</p>
+        </div>
+        <div id="Coming-soon">
+            <h1>Learning More!!</h1>
+        </div>
+    </div>
+
+    <!-- Contact Me -->
+    <div id="Contact-me">
+        <h1 id="Contact-heading">CONTACT ME!!</h1>
+        <p>Do you want to contact me!! Have a project on which I can work with you/for you?  Here is my email for any queries
+            <code>
+                abnagar2017@gmail.com
+            </code>
+            These are the places where you can contact me!!
+        </p>
+        <div id="Contact-link">
+            <a href="https://www.instagram.com/_indoroid_/" target="_blank">Instagram</a>
+            <a href="https://www.facebook.com/adityabhusham.nagar/" target="_blank">Facebook</a>
+            <a href="https://www.linkedin.com/in/aditya-bhushan-nagar-0408b2171/" target="_blank">LinkedIn</a>
+        </div>
+    </div>
+  </body>
+  <script>
+      console.log("Yo, I see here that you are inspecting the page!!")
+      console.log("I hope I could help you!!")
+  </script>
+</html>
