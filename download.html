@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Hi!! This is the official site of Indoroid aka Aditya Bhushan Nagar"
+    />
+    <meta name="keywords" content="Indoroid, HTML, CSS, JS, Website Building" />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap"
+      rel="stylesheet"
+    />
+    <title>Indoroid</title>
+    <style>
+      html {
+        scroll-behavior: smooth;
+        color: rgb(0, 0, 0);
+      }
+      body {
+        font-family: "Baloo Bhai 2", cursive;
+        background: white;
+      }
+
+      /*Navigation Menu CSS*/
+      nav {
+        /*Animation*/
+        animation-name: Nav-menu;
+        animation-duration: 15s;
+        animation-iteration-count: infinite;
+
+        /* Misc Properties */
+        background: rgb(54, 54, 54);
+        display: flex;
+        align-items: center;
+        align-content: center;
+        align-self: center;
+        flex-flow: row wrap;
+        justify-content: center;
+        font-family: "Baloo Bhai 2", cursive;
+        border: rgb(255, 238, 0) 2px solid;
+        border-radius: 20px;
+      }
+      .Nav-item {
+        background: rgb(0, 0, 0);
+        padding: 5px;
+        margin: 15px;
+        border: 2px solid rgb(255, 0, 0);
+        border-radius: 25px;
+        flex-grow: 5;
+        text-align: center;
+        padding: auto;
+      }
+      nav p a {
+        color: rgb(0, 17, 255);
+        text-decoration: none;
+        cursor: default;
+      }
+      nav p:hover {
+        background: rgb(255, 0, 0);
+        margin: 15px;
+        display: inline;
+        border: 2px solid rgb(0, 0, 0);
+        border-radius: 25px;
+      }
+      nav p a:hover {
+        background: rgb(255, 0, 0);
+        color: rgb(47, 0, 255);
+        text-decoration: none;
+        cursor: default;
+      }
+
+      @keyframes Nav-menu {
+        0% {
+          background: grey;
+        }
+        25% {
+          background: blue;
+        }
+        50% {
+          background: red;
+        }
+        75% {
+          background: green;
+        }
+        100% {
+          background-color: grey;
+        }
+      }
+
+      #My-Profile-Github {
+        height: 50px;
+        width: 50px;
+      }
+
+      #img-nav {
+        background: transparent;
+        border: none;
+        justify-self: center;
+        margin: auto;
+        padding: 4px;
+      }
+      #img-nav a {
+        background: transparent;
+        border: none;
+        color: unset;
+      }
+      #img-nav a:hover {
+        cursor: pointer;
+      }
+
+      /* Welcome Message */
+      #Welcome {
+        top: 0%;
+        background-image: url("https://images.pexels.com/photos/310452/pexels-photo-310452.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260");
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      #Download_H1 {
+        text-align: center;
+        color: rgb(255, 0, 0);
+        font-family: "Zen Dots", cursive;
+      }
+
+      #Para1 {
+        text-align: center;
+        font-family: "Zen Dots", cursive;
+      }
+
+      #Web-Template{
+          text-align: center;
+          font-size: 3em;
+          border: 2px solid red;
+          background-color: blue;
+        }
+        
+        .web-temp-downloads{
+            margin: 0%;
+            display: inline-flex;
+            flex-flow: row wrap;
+            justify-items: center;
+            justify-self: center;
+            align-items: flex-start;
+        }
+        
+        .template-download{
+            height: 200px;
+            width: 200px;
+            margin: 1em;
+            border: 2px solid purple;
+            align-content: center;
+            text-align: center;
+            padding: 5px;
+            background-color: chartreuse;
+            text-decoration: none;
+            color: black;
+            border-radius: 50px;
+      }
+
+      .template-download p{
+          color: blue;
+          font-family: 'Zen Dots', cursive;
+      }
+
+      /* Contact Me */
+      #Contact-heading{
+        margin: auto;
+        text-align: center;
+    }
+
+    #Contact-link{
+        display: flex;
+        flex-flow: column wrap;
+    }
+
+    #Contact-me{
+        margin: auto;
+        text-align: center;
+        border: 2px solid black;
+        margin: auto;
+
+        /*Animation*/
+        animation-name: Contact-me-bg;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes Contact-me-bg {
+        0%{
+            background-color: white;
+        }
+        25%{
+            background-color: blue;
+        }
+        50%{
+            background-color: red;
+        }
+        75%{
+            background-color: green;
+        }
+        100%{
+            background-color: white;
+        }
+    }
+    a[target="_blank"]{
+        text-align: center;
+        font-size: 25px;
+        text-decoration: none;
+        color: yellow;
+        background: #000;
+
+        transition-property: all;
+        transition-delay: 2ms;
+        transition-duration: 2s;
+    }
+
+    a[target="_blank"]:hover{
+        font-size: 50px;
+        color: red;
+        border: 2px solid green;
+        background-color: white;
+    }
+
+    </style>
+  </head>
+  <body>
+    <div id="Welcome">
+      <!-- Navigation Menu -->
+      <nav>
+        <p id="img-nav">
+          <a href="https://github.com/Indoroid">
+            <img
+              src="https://cdn.freebiesupply.com/logos/large/2x/github-icon-logo-png-transparent.png"
+              alt=""
+              id="My-Profile-Github"
+            />
+          </a>
+        </p>
+        <p class="Nav-item">
+          <a href="https://github.com/Indoroid?tab=projects">My Projects</a>
+        </p>
+        <p class="Nav-item"><a href="#">Downloads</a></p>
+        <p class="Nav-item">
+          <a href="https://github.com/Indoroid?tab=repositories"
+            >My repositories</a
+          >
+        </p>
+      </nav>
+      <h1 id="Download_H1">Downloads</h1>
+      <p id="Para1">
+        This is the downloads page. Here you can find all the projects with
+        their download links.
+      </p>
+    </div>
+
+    <h1 id="Web-Template">Web Templates</h1>
+    <div class="web-temp-downloads">
+       <a href="https://github.com/Indoroid/Web-Template-No1/archive/refs/heads/main.zip" class="template-download">
+           <h1>Template 1</h1>
+           <p>Click here to download the Template</p>
+       </a>
+       <!-- <a href="" class="template-download">
+           <h1>Template 2</h1>
+           <p>Click here to get redirected to the download page</p>
+       </a> -->
+    </div>
+    <!-- <h1 id="Web-Template">Web Templates</h1>
+    <div class="web-temp-downloads">
+       <a href="https://github.com/Indoroid/Web-Template-No1/archive/refs/heads/main.zip" class="template-download">
+           <h1>Template 1</h1>
+           <p>Click here to download the Template</p>
+       </a>
+       <a href="" class="template-download">
+           <h1>Template 2</h1>
+           <p>Click here to get redirected to the download page</p>
+       </a> -->
+       <!-- Contact Me -->
+    <div id="Contact-me">
+        <h1 id="Contact-heading">CONTACT ME!!</h1>
+        <p>Do you want to contact me!! Have a project on which I can work with you/for you?  Here is my email for any queries
+            <code>
+                abnagar2017@gmail.com
+            </code>
+            These are the places where you can contact me!!
+        </p>
+        <div id="Contact-link">
+            <a href="https://www.instagram.com/_indoroid_/" target="_blank">Instagram</a>
+            <a href="https://www.facebook.com/adityabhusham.nagar/" target="_blank">Facebook</a>
+            <a href="https://www.linkedin.com/in/aditya-bhushan-nagar-0408b2171/" target="_blank">LinkedIn</a>
+        </div>
+    </div>
+    </div>
+  </body>
+</html>
